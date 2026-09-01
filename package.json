@@ -1,0 +1,32 @@
+{
+  "name": "a2a-multi-agent-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "This is a project to test different multi-agent architectures and patterns.",
+  "homepage": "https://github.com/avipeels/a2a-multi-agent#readme",
+  "bugs": {
+    "url": "https://github.com/avipeels/a2a-multi-agent/issues"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avipeels/a2a-multi-agent.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "scripts": {
+    "build": "tsc --build",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}
