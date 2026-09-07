@@ -5,7 +5,7 @@ import type {
     AgentOutput
 } from '../index.js';
 
-export class ReseachAgent implements Agent {
+export class ResearchAgent implements Agent {
     constructor(private readonly llm: LLM) {
 
     }

@@ -1,5 +1,5 @@
 import { GeminiLLM } from "@lab/llm";
-import { ReseachAgent } from "@lab/agent-core/src/research-agent.js";
+import { ResearchAgent } from "@lab/agent-core/src/research-agent.js";
 
 const apiKey = process.env.GEMINI_API_KEY;
 if(!apiKey){
@@ -8,7 +8,7 @@ if(!apiKey){
 
 const llm = new GeminiLLM(apiKey);
 
-const agent = new ReseachAgent(llm);
+const agent = new ResearchAgent(llm);
 
 async function main(): Promise<void> {
   const result = await agent.run({
