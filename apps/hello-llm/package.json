@@ -1,0 +1,9 @@
+{
+  "name": "@lab/hello-llm",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx --env-file=../../.env src/index.ts"
+  }
+}
