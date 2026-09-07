@@ -13,9 +13,18 @@ async function main(): Promise<void> {
   const response = await ai.models.generateContent({
     model: "gemini-3.6-flash",
     config: {
-      systemInstruction: "You are a senior software architect. Explain concepts using practical engineering examples"
+      systemInstruction: "You are a product research assistant.",
+      responseMimeType: "application/json"
     },
-    contents: "Explain what an agent is.",
+    contents: `
+    Return information of macbook air M4 as JSON.
+    Required fields:
+    - product
+    - category
+    - targetUsers
+    - keyStrengths
+    - keyWeaknesses
+    `,
   })
   console.log(response.text);
 }
