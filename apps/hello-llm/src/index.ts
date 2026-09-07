@@ -10,23 +10,18 @@ const ai = new GoogleGenAI({
 });
 
 async function main(): Promise<void> {
+  const answer = await askGemini('Explain the difference between an LLM and an AI Agent.');
+  console.log(answer);
+}
+
+async function askGemini(prompt: string): Promise<string>{
   const response = await ai.models.generateContent({
-    model: "gemini-3.6-flash",
-    config: {
-      systemInstruction: "You are a product research assistant.",
-      responseMimeType: "application/json"
-    },
-    contents: `
-    Return information of macbook air M4 as JSON.
-    Required fields:
-    - product
-    - category
-    - targetUsers
-    - keyStrengths
-    - keyWeaknesses
-    `,
+     model: "gemini-3.6-flash",
+     contents: `${prompt}`
   })
-  console.log(response.text);
+  const text = response.text ?? "";
+  console.log(text);
+  return text;
 }
 
 main().catch((error: unknown) => {
