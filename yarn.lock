@@ -132,6 +132,16 @@
   resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.28.2.tgz#b21affb804cc167c133d95f45b3a1dc1323b9a87"
   integrity sha512-5ebpxr3nWMzrL/rnUI755Jkuee0bHL/Gq0WTF9lvcpv73wAp5eu8MfBUgWK9bhWvZjj7yX8etf/8tI8Ney695g==
 
+"@google/genai@^1.0.0":
+  version "1.52.0"
+  resolved "https://registry.npmjs.org/@google/genai/-/genai-1.52.0.tgz#0dc2544b5ac93bdabfd313482d9a5c12623cbc7a"
+  integrity sha512-gwSvbpiN/17O9TbsqSsE/OzZcpv5Fo4RQjdngGgogtuB9RsyJ8ZHhX5KjHj1bp5N9snN2eK8LDGXSaWW2hof8Q==
+  dependencies:
+    google-auth-library "^10.3.0"
+    p-retry "^4.6.2"
+    protobufjs "^7.5.4"
+    ws "^8.18.0"
+
 "@google/genai@^2.21.0":
   version "2.21.0"
   resolved "https://registry.npmjs.org/@google/genai/-/genai-2.21.0.tgz#806f18d30309d66c48367e70c0da6ddae553b062"

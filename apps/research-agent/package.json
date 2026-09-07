@@ -1,0 +1,13 @@
+{
+  "name": "@lab/research-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx --env-file=../../.env src/index.ts"
+  },
+  "dependencies": {
+    "@lab/agent-core": "*",
+    "@lab/llm": "*"
+  }
+}
