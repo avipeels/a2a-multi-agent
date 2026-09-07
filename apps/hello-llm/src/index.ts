@@ -12,7 +12,10 @@ const ai = new GoogleGenAI({
 async function main(): Promise<void> {
   const response = await ai.models.generateContent({
     model: "gemini-3.6-flash",
-    contents: "Explain what an agent is in three sentences",
+    config: {
+      systemInstruction: "You are a senior software architect. Explain concepts using practical engineering examples"
+    },
+    contents: "Explain what an agent is.",
   })
   console.log(response.text);
 }
